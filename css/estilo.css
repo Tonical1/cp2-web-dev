@@ -1,0 +1,14 @@
+
+#imgbanner{
+    display: block;
+    margin: auto;
+    width: 70%;
+    max-height: 600px;
+}
+#cards{
+    display: flex;
+}
+.imgcard{
+    width: 200px;
+    margin: 8rem;
+}
