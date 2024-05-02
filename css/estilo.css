@@ -1,14 +1,60 @@
+body{
+    width: 100%;
+}
+#logo{
+    width: 220px;
+    display: flex;
+    position: relative;
+}
+#imglogo{
+    width: 200px;
+}
+#listanav{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+
+}
 
 #imgbanner{
     display: block;
     margin: auto;
     width: 70%;
     max-height: 600px;
+    border-style: double;
+    border-width: 5px;
+    
 }
 #cards{
     display: flex;
+    margin-bottom: 1rem;
+    text-align: center;
+
+   
+
 }
 .imgcard{
     width: 200px;
+    height: 120px;
     margin: 8rem;
+    border-style: solid;
+    border-width: 3px;
+    color: black;
+   
+}
+.nomecard{
+    font-weight: 600;
+    margin-top: -6rem;
+}
+.precocard{
+    width: 100px;
+    height: 1px;
+    background: rgb(156, 0, 0);
+    border-radius: 5px;
+    margin: 8px auto 0 auto;
 }
