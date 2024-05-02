@@ -141,4 +141,3 @@ function iniciarquiz(){
     }
     alert(`Parabens! Você finalizou o quiz com ${pontos} pontos`)
 }
-function respostas()
