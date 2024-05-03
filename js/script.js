@@ -87,11 +87,14 @@ function enviandologin(){
 //quiz
 
 function iniciarquiz(){
+
+    let respostas = []
     let pontos = 0;
     let resposta1 = prompt("Quantas rodas tem uma bike comum?")
     if (resposta1 == "2"){
         alert("acertou, +1 ponto!")
         pontos = 1;
+        respostas.push(resposta1);
     } else{
         alert("Resposta incorreta!")
     }
@@ -131,7 +134,7 @@ function iniciarquiz(){
     } else{
         alert("Resposta incorreta!")
     }
-    let resposta7 = prompt("Esta gostando do quiz?")
+    let resposta7 = prompt("Esta gostando do quiz?").toLowerCase()
     if (resposta7 == "sim"){
         alert("acertou, +1 ponto!")
         pontos = pontos + 1
@@ -160,4 +163,11 @@ function iniciarquiz(){
         alert("Resposta incorreta!")
     }
     alert(`Parabens! Você finalizou o quiz com ${pontos} pontos`)
+    
+
+    // Exibindo respostas
+    let resultado = document.getElementById("resultado")
+    resultado.innerHTML = 
 }
+
+//Mostrando
