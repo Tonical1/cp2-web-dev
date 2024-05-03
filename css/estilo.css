@@ -1,5 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
-    width: 100%;
+    max-width: 100%;
+    
 }
 #logo{
     width: 220px;
@@ -31,6 +37,8 @@ a{
     
 }
 #cards{
+    max-width: 100%;
+    justify-content: center;
     display: flex;
     margin-bottom: 1rem;
     text-align: center;

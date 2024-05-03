@@ -1,7 +1,9 @@
 //Variaveis
 
 //alerta pagina principal (boas vindas)
-
+function welcome(){
+    alert("Seja bem-vindo(a)")
+}
 
 //Validação
 function validarCampo(){
@@ -24,7 +26,25 @@ function enviando(){
 }}
 
 //Criando cores automaticas
+function mudarcor(){
+    let lista = [`rgb(${(111)}, ${(122)}, ${(90)})`,
+                `rgb(${(90)}, ${(94)}, ${(100)})`,
+                `rgb(${(100)}, ${(122)}, ${(145)})`
+            ]
 
+    for (let ind = 0; ind < lista.length; ind++) {
+        setTimeout(function(){
+            document.body.style.backgroundColor = lista[ind];
+            console.log(ind);
+        }, (ind + 1) * 2000);
+    }
+}
+window.addEventListener('load',function(){
+    mudarcor()
+    this.setInterval(function(){
+        mudarcor();
+    }, 6000) //executar de tempos em tempos
+})
 
 //criando slideshow
 //declarando as variaveis
