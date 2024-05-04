@@ -191,7 +191,9 @@ function iniciarquiz() {
     }
 
     alert(`Parabéns! Você finalizou o quiz com ${pontos} pontos`);
-
+    let resultado = document.getElementById("resultado");
+    resultado.innerText = respostas.join("\n");
+    
     // Exibindo respostas
 }
 
