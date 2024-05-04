@@ -97,7 +97,7 @@ function iniciarquiz() {
         respostas.push("Resposta correta na pergunta 1");
     } else {
         alert("Resposta incorreta!");
-        respostas.push("Resposta incorreta na pergunta 1");
+        respostas.push(`Resposta incorreta na pergunta 1\n${resposta1}`);
     }
 
     let resposta2 = prompt("Em qual ano foi inventada a bike?");
@@ -107,7 +107,7 @@ function iniciarquiz() {
         respostas.push("Resposta correta na pergunta 2");
     } else {
         alert("Resposta incorreta!");
-        respostas.push("Resposta incorreta na pergunta 2");
+        respostas.push(`Resposta incorreta na pergunta 2\n${resposta2}`);
     }
 
     let resposta3 = prompt("Qual o primeiro nome da pessoa que inventou a bike?").toLowerCase();
@@ -117,7 +117,7 @@ function iniciarquiz() {
         respostas.push("Resposta correta na pergunta 3");
     } else {
         alert("Resposta incorreta!");
-        respostas.push("Resposta incorreta na pergunta 3");
+        respostas.push(`Resposta incorreta na pergunta 3\n${resposta3}`);
     }
 
     let resposta4 = prompt("Qual o sobrenome da pessoa que inventou a bike (haha achou que não iria perguntar)?").toLowerCase();
@@ -127,7 +127,7 @@ function iniciarquiz() {
         respostas.push("Resposta correta na pergunta 4");
     } else {
         alert("Resposta incorreta!");
-        respostas.push("Resposta incorreta na pergunta 4");
+        respostas.push(`Resposta incorreta na pergunta 4\n${resposta4}`);
     }
 
     let resposta5 = prompt("Em qual ano o ciclismo se tornou esporte olímpico?");
@@ -137,7 +137,7 @@ function iniciarquiz() {
         respostas.push("Resposta correta na pergunta 5");
     } else {
         alert("Resposta incorreta!");
-        respostas.push("Resposta incorreta na pergunta 5");
+        respostas.push(`Resposta incorreta na pergunta 5\n${resposta5}`);
     }
 
     let resposta6 = prompt("O criador do site gosta de andar de bike (: ?").toLowerCase();
@@ -147,7 +147,7 @@ function iniciarquiz() {
         respostas.push("Resposta correta na pergunta 6");
     } else {
         alert("Resposta incorreta!");
-        respostas.push("Resposta incorreta na pergunta 6");
+        respostas.push(`Resposta incorreta na pergunta 6\n${resposta6}`);
     }
 
     let resposta7 = prompt("Esta gostando do quiz?").toLowerCase();
@@ -157,7 +157,7 @@ function iniciarquiz() {
         respostas.push("Resposta correta na pergunta 7");
     } else {
         alert("Resposta incorreta!");
-        respostas.push("Resposta incorreta na pergunta 7");
+        respostas.push(`Resposta incorreta na pergunta 7\n${resposta7}`);
     }
 
     let resposta8 = prompt("Qual a cidade brasileira que mais usa bicicletas em deslocamentos diários?").toLowerCase();
@@ -167,7 +167,7 @@ function iniciarquiz() {
         respostas.push("Resposta correta na pergunta 8");
     } else {
         alert("Resposta incorreta!");
-        respostas.push("Resposta incorreta na pergunta 8");
+        respostas.push(`Resposta incorreta na pergunta 8\n${resposta8}`);
     }
 
     let resposta9 = prompt("Qual cidade do Brasil tem maior número de ciclofaixas?").toLowerCase();
@@ -177,7 +177,7 @@ function iniciarquiz() {
         respostas.push("Resposta correta na pergunta 9");
     } else {
         alert("Resposta incorreta!");
-        respostas.push("Resposta incorreta na pergunta 9");
+        respostas.push(`Resposta incorreta na pergunta 9\n${resposta9}`);
     }
 
     let resposta10 = prompt("Qual o nome do esporte radical em terrenos irregulares (principalmente montanhas) com bike?").toLowerCase();
@@ -187,14 +187,13 @@ function iniciarquiz() {
         respostas.push("Resposta correta na pergunta 10");
     } else {
         alert("Resposta incorreta!");
-        respostas.push("Resposta incorreta na pergunta 10");
+        respostas.push(`Resposta incorreta na pergunta 10\n${resposta10}`);
     }
 
+    // Exibindo respostas
     alert(`Parabéns! Você finalizou o quiz com ${pontos} pontos`);
     let resultado = document.getElementById("resultado");
-    resultado.innerText = respostas.join("\n");
-    
-    // Exibindo respostas
+    resultado.innerText = respostas.join("\n\n");    
 }
 
 //Mostrando
