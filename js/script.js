@@ -86,88 +86,113 @@ function enviandologin(){
 
 //quiz
 
-function iniciarquiz(){
-
-    let respostas = []
+function iniciarquiz() {
+    let respostas = [];
     let pontos = 0;
-    let resposta1 = prompt("Quantas rodas tem uma bike comum?")
-    if (resposta1 == "2"){
-        alert("acertou, +1 ponto!")
-        pontos = 1;
-        respostas.push(resposta1);
-    } else{
-        alert("Resposta incorreta!")
+
+    let resposta1 = prompt("Quantas rodas tem uma bike comum?");
+    if (resposta1 == "2") {
+        alert("acertou, +1 ponto!");
+        pontos++;
+        respostas.push("Resposta correta na pergunta 1");
+    } else {
+        alert("Resposta incorreta!");
+        respostas.push("Resposta incorreta na pergunta 1");
     }
-    let resposta2 = prompt("Em qual ano foi inventada a bike?")
-    if (resposta2 == "1817"){
-        alert("acertou, +1 ponto!")
-        pontos = pontos + 1;
-    } else{
-        alert("Resposta incorreta!")
+
+    let resposta2 = prompt("Em qual ano foi inventada a bike?");
+    if (resposta2 == "1817") {
+        alert("acertou, +1 ponto!");
+        pontos++;
+        respostas.push("Resposta correta na pergunta 2");
+    } else {
+        alert("Resposta incorreta!");
+        respostas.push("Resposta incorreta na pergunta 2");
     }
-    let resposta3 = prompt("Qual o primeiro nome da pessoa que inventou a bike?").toLowerCase()
-    console.log(resposta3)
-    if (resposta3 == "karl"){
-        alert("acertou, +1 ponto!")
-        pontos = pontos + 1
-    } else{
-        alert("Resposta incorreta!")
+
+    let resposta3 = prompt("Qual o primeiro nome da pessoa que inventou a bike?").toLowerCase();
+    if (resposta3 == "karl") {
+        alert("acertou, +1 ponto!");
+        pontos++;
+        respostas.push("Resposta correta na pergunta 3");
+    } else {
+        alert("Resposta incorreta!");
+        respostas.push("Resposta incorreta na pergunta 3");
     }
-    let resposta4 = prompt("Qual o sobrenome da pessoa que inventou a bike (haha achou que não iria perguntar)?").toLowerCase()
-    if (resposta4 == "von drais"){
-        alert("acertou, +1 ponto!")
-        pontos = pontos + 1
-    } else{
-        alert("Resposta incorreta!")
+
+    let resposta4 = prompt("Qual o sobrenome da pessoa que inventou a bike (haha achou que não iria perguntar)?").toLowerCase();
+    if (resposta4 == "von drais") {
+        alert("acertou, +1 ponto!");
+        pontos++;
+        respostas.push("Resposta correta na pergunta 4");
+    } else {
+        alert("Resposta incorreta!");
+        respostas.push("Resposta incorreta na pergunta 4");
     }
-    let resposta5 = prompt("Em qual ano o ciclismo se tornou esporte olímpico?")
-    if (resposta5 == "1996"){
-        alert("acertou, +1 ponto!")
-        pontos = pontos + 1
-    } else{
-        alert("Resposta incorreta!")
+
+    let resposta5 = prompt("Em qual ano o ciclismo se tornou esporte olímpico?");
+    if (resposta5 == "1996") {
+        alert("acertou, +1 ponto!");
+        pontos++;
+        respostas.push("Resposta correta na pergunta 5");
+    } else {
+        alert("Resposta incorreta!");
+        respostas.push("Resposta incorreta na pergunta 5");
     }
-    let resposta6 = prompt("O criador do site gosta de andar de bike (: ?").toLowerCase()
-    if (resposta6 == "sim"){
-        alert("acertou, +1 ponto!")
-        pontos = pontos + 1
-    } else{
-        alert("Resposta incorreta!")
+
+    let resposta6 = prompt("O criador do site gosta de andar de bike (: ?").toLowerCase();
+    if (resposta6 == "sim") {
+        alert("acertou, +1 ponto!");
+        pontos++;
+        respostas.push("Resposta correta na pergunta 6");
+    } else {
+        alert("Resposta incorreta!");
+        respostas.push("Resposta incorreta na pergunta 6");
     }
-    let resposta7 = prompt("Esta gostando do quiz?").toLowerCase()
-    if (resposta7 == "sim"){
-        alert("acertou, +1 ponto!")
-        pontos = pontos + 1
-    } else{
-        alert("Po, sacanagem )= ")
+
+    let resposta7 = prompt("Esta gostando do quiz?").toLowerCase();
+    if (resposta7 == "sim") {
+        alert("acertou, +1 ponto!");
+        pontos++;
+        respostas.push("Resposta correta na pergunta 7");
+    } else {
+        alert("Resposta incorreta!");
+        respostas.push("Resposta incorreta na pergunta 7");
     }
-    let resposta8 = prompt("Qual a cidade brasileira que mais usa bicicletas em deslocamentos diários?").toLowerCase()
-    if (resposta8 == "porto alegre"){
-        alert("acertou, +1 ponto!")
-        pontos = pontos + 1
-    } else{
-        alert("Resposta incorreta!")
+
+    let resposta8 = prompt("Qual a cidade brasileira que mais usa bicicletas em deslocamentos diários?").toLowerCase();
+    if (resposta8 == "porto alegre") {
+        alert("acertou, +1 ponto!");
+        pontos++;
+        respostas.push("Resposta correta na pergunta 8");
+    } else {
+        alert("Resposta incorreta!");
+        respostas.push("Resposta incorreta na pergunta 8");
     }
-    let resposta9 = prompt("Qual cidade do Brasil tem maior numero de ciclofaixas?").toLowerCase()
-    if (resposta9 == "são paulo" || "sao paulo"){
-        alert("acertou, +1 ponto!")
-        pontos = pontos + 1
-    } else{
-        alert("Resposta incorreta!")
+
+    let resposta9 = prompt("Qual cidade do Brasil tem maior número de ciclofaixas?").toLowerCase();
+    if (resposta9 === "são paulo" || resposta9 === "sao paulo") {
+        alert("acertou, +1 ponto!");
+        pontos++;
+        respostas.push("Resposta correta na pergunta 9");
+    } else {
+        alert("Resposta incorreta!");
+        respostas.push("Resposta incorreta na pergunta 9");
     }
-    let resposta10 = prompt("Qual o nome do esporte radical em terrenos irregulares (principalmente montanhas) com bike?").toLowerCase()
-    if (resposta10 == "mountain bike"){
-        alert("acertou, +1 ponto!")
-        pontos = pontos + 1
-    } else{
-        alert("Resposta incorreta!")
+
+    let resposta10 = prompt("Qual o nome do esporte radical em terrenos irregulares (principalmente montanhas) com bike?").toLowerCase();
+    if (resposta10 == "mountain bike") {
+        alert("acertou, +1 ponto!");
+        pontos++;
+        respostas.push("Resposta correta na pergunta 10");
+    } else {
+        alert("Resposta incorreta!");
+        respostas.push("Resposta incorreta na pergunta 10");
     }
-    alert(`Parabens! Você finalizou o quiz com ${pontos} pontos`)
-    
+
+    alert(`Parabéns! Você finalizou o quiz com ${pontos} pontos`);
 
     // Exibindo respostas
-    let resultado = document.getElementById("resultado")
-    resultado.innerHTML = 
 }
 
 //Mostrando
